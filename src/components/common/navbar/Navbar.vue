@@ -21,12 +21,16 @@
         display:flex;
         height:44px;
         line-height:44px;
+        text-align:center;
+         background-color:rgb(236, 129, 147);
+          
          .left{
              width:80px;
+               
          };
          .center{
-             flex:1;
-             text-align:center;
+            flex:1; 
+            font-weight:bold;
          };
          .right{
              width:80px;

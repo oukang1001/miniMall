@@ -19,5 +19,7 @@
         text-align:center;
         box-shadow:0 -1px 1px rgba(150,150,150,.5);
         padding-top:2px;
+        background-color:#fff;
+        z-index:10;
     }
 </style>
