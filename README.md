@@ -14,17 +14,15 @@ npm run serve
 
 ## 2.项目界面展示
 
-![](C:\Users\Administrator\Desktop\新建文件夹\home.png)
+![](https://github.com/oukang1001/ProjectImages/blob/master/miniMall/home.png)
 
-![](C:\Users\Administrator\Desktop\新建文件夹\category.png)
+![](https://github.com/oukang1001/ProjectImages/blob/master/miniMall/category.png)
 
-![](C:\Users\Administrator\Desktop\新建文件夹\cart.png)
+![](https://github.com/oukang1001/ProjectImages/blob/master/miniMall/cart.png)
 
+![](https://github.com/oukang1001/ProjectImages/blob/master/miniMall/profile.png)
 
-
-![](C:\Users\Administrator\Desktop\新建文件夹\profile.png)
-
-![](C:\Users\Administrator\Desktop\新建文件夹\detail.png)
+![](https://github.com/oukang1001/ProjectImages/blob/master/miniMall/detail.png)
 
 ###	项目功能划分主要是首页、分类页、购物车页、个人中心、详情页，采用vue、vuex、vue-router、axios、better-scroll等技术栈开发，相关模块的具体划分请拉取到本地后查看
 
