@@ -8,7 +8,7 @@
             </div>
             <div class="content">
                 <div v-for="(element,j) in item.list" :key="j">
-                    <img :src="element" alt="" @load="handleLoadedImage">
+                    <img v-lazy="element" alt="" @load="handleLoadedImage">
                 </div>
             </div>
         </div>

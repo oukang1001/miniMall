@@ -48,6 +48,7 @@ import {activeCheck,clickChangePosition} from "common/mixins"
         text-align:center;
         padding:10px 0;
         border-bottom:5px solid #eee;
+        font-size:12px;
       .rule{
                 p{
                 padding:10px 0;

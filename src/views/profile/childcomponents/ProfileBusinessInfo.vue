@@ -30,9 +30,11 @@
         .balance,.discount,.integral{
             flex:1;
              padding:8px;
+             font-size:16px;
         }
         .balance p,.discount p,.integral p{
             line-height:25px;
+            font-size:16px;
         }
         .balance span,.discount span,.integral span{
             color:red;

@@ -1,7 +1,7 @@
 <template>
     <div class="cart_goods_item">
         <div class="l">
-            <check-button class="check_button" :is-select="cartListItem.isSelect" @click.native="changeState(cartListItem.id)"></check-button>
+            <check-button class="check_button" :is-select="cartListItem.isSelect" @click.native="changeState"></check-button>
         </div>
         <div class="c">
             <img :src="cartListItem.image" alt="" @load="imageLoaded">
@@ -33,6 +33,10 @@ import {mapState} from "vuex"
                 default(){
                     return {}
                 }
+            },
+            index:{
+                type:Number,
+                default:0
             }
         },
         components:{
@@ -47,18 +51,8 @@ import {mapState} from "vuex"
             imageLoaded(){
                 this.$root.$emit("Loaded")
             },
-            changeState(id){
-            //   this.cartList.forEach(item=>{
-            //         if(item.id===id){
-            //          item.isSelect=!item.isSelect;
-            //          return;
-            //        }
-            //     })
-                this.cartList.find(item=>{
-                    return item.id===id
-                }).isSelect=!this.cartList.find(item=>{
-                    return item.id===id
-                }).isSelect;
+            changeState(){
+                this.cartList[this.index].isSelect=!this.cartList[this.index].isSelect;
                 
             }
         },

@@ -78,6 +78,7 @@ import {showToast} from "common/utils"
      background:#fff;
      position:relative;
      z-index:10;
+     font-size:16px;
      .l,.center,.r{
          flex:1;
      }

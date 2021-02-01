@@ -2,7 +2,7 @@
     <div class="comment_info" v-if="commentInfo.list">
         <div class="head"><span>用户评价</span><span>更多</span></div>
         <div class="top">
-            <img :src="commentInfo.list[0].user.avatar" alt="">
+            <img v-lazy="commentInfo.list[0].user.avatar" alt="">
             <span>{{commentInfo.list[0].user.uname}}</span>
         </div>
         <div class="middle">{{commentInfo.list[0].content}}</div>
@@ -52,6 +52,7 @@ import {activeCheck,clickChangePosition} from "common/mixins"
     .comment_info{
         padding:10px 0;
         border-bottom:5px solid #eee; 
+        font-size:14px;
         .head{
             display:flex;
             justify-content:space-between;
