@@ -18,7 +18,6 @@
         methods:{
             handleJoincartClick(){
                 this.$emit("addCart")
-                console.log("join cart");
             }
         }
     }

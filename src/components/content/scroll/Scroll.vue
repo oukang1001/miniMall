@@ -105,7 +105,6 @@ BScroll.use(pulldown);
             },
             refresh(){
                 this.scroll&&this.scroll.refresh();
-                // console.log(111)
             },
             getScrollY(){
                 return this.scroll&&-this.scroll.y

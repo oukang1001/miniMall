@@ -60,7 +60,6 @@
         mixins:[imageRefresh],
         computed:{
             list(){
-                // console.log(this.goods[this.currentType].list)
                 return this.goods[this.currentType].list;
                
             }
@@ -78,7 +77,6 @@
         },
         created(){
             getHomeMultidata().then(res=>{
-                // console.log(res);
                 this.banner=res.data.banner.list;
                 this.recommend=res.data.recommend.list;
             });

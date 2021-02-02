@@ -91,7 +91,6 @@ import {showToast} from "common/utils"
                this.itemParams=result.itemParams;
                //获取商品评论信息
                this.commentInfo=result.rate;
-               console.log(data)
             });
              //获取推荐数据
                getRecommendData().then(data=>{

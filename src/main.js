@@ -15,7 +15,7 @@ import imgLazyLoad from "vue-lazyload"
 Vue.use(imgLazyLoad,{
  
   loading:require("./assets/img/lazyload/spiritCR7.jpg"),
-  error:require("./assets/img/lazyload/error.jpg")
+  error:require("./assets/img/lazyload/error.jpg"),
 })
 
 Vue.config.productionTip = false

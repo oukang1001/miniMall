@@ -1,6 +1,6 @@
 <template>
      <div class="goods_item">
-           <img v-lazy="getImage" alt="" @load="imageLoad" @click="handleDetailClick(goodsItem.iid)">
+           <img v-lazy="getImage" alt="" @load="imageLoad" @click="handleDetailClick(goodsItem.iid)" :key="getImage">
             <div class="goods_item_content">
                 <p>{{goodsItem.title}}</p>
                 <span class="price">{{goodsItem.price}}</span>
@@ -24,9 +24,6 @@
             getImage(){
                 return this.goodsItem.show?this.goodsItem.show.img:this.goodsItem.image;
             }
-        },
-        created(){
-            // console.log(this.list);
         },
         methods:{
             imageLoad(){

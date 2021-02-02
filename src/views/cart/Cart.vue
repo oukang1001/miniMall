@@ -48,7 +48,6 @@ import backTop from "components/content/backtop/BackTop"
              this.$root.$on("Loaded",()=>{
                 this.$refs.scroll.refresh();
             });
-            console.log(this.$toast);
         },
         activated(){
             this.$refs.scroll.refresh();

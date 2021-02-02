@@ -7,11 +7,6 @@
 <script>
     export default {
         name:"CheckButton",
-        data(){
-            return {
-        
-            }
-        },
         props:{
             isSelect:{
                 type:Boolean,

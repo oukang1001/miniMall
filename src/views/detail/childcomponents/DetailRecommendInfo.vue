@@ -27,9 +27,6 @@ import {activeCheck,clickChangePosition} from "common/mixins"
         mixins:[activeCheck,clickChangePosition],
         components:{
             goodsList
-        },
-        mounted(){
-        
         }
     }
 </script>

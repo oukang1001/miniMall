@@ -22,9 +22,6 @@ import CartGoodsItem from "./CartGoodsItem"
                 return this.$store.state.cartList;
             }
         },
-        created(){
-            
-        }
     }
 </script>
 

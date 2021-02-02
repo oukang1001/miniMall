@@ -8,7 +8,7 @@
             </div>
             <div class="content">
                 <div v-for="(element,j) in item.list" :key="j">
-                    <img v-lazy="element" alt="" @load="handleLoadedImage">
+                    <img :src="element" alt="" @load="handleLoadedImage">
                 </div>
             </div>
         </div>
@@ -31,9 +31,6 @@
                 this.EventBus.$emit("imageLoaded");
             }
         },
-        mounted(){
-            
-        }
     }
 </script>
 

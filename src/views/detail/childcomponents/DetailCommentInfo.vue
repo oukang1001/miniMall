@@ -2,7 +2,7 @@
     <div class="comment_info" v-if="commentInfo.list">
         <div class="head"><span>用户评价</span><span>更多</span></div>
         <div class="top">
-            <img v-lazy="commentInfo.list[0].user.avatar" alt="">
+            <img :src="commentInfo.list[0].user.avatar" alt="">
             <span>{{commentInfo.list[0].user.uname}}</span>
         </div>
         <div class="middle">{{commentInfo.list[0].content}}</div>
@@ -25,7 +25,7 @@ import {activeCheck,clickChangePosition} from "common/mixins"
         name:"DetailCommentInfo",
         data(){
             return {
-                 index:2
+                index:2,
             }
         },
         props:{
@@ -41,9 +41,6 @@ import {activeCheck,clickChangePosition} from "common/mixins"
             time(){
                 return getTime(this.commentInfo.list[0].created);
             }
-        },
-        mounted(){
-            
         }
     }
 </script>

@@ -40,10 +40,8 @@ import {swiper,swiperItem} from "components/common/swiper/index"
                      this.isLoaded=true;
                 }
             }
-        },
-        mounted(){
-              
         }
+        
     }
 </script>
 

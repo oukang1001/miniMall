@@ -39,7 +39,6 @@ import {getCategoryData,getCategorySubData} from "network/category"
             getCategoryData().then(res=>{
                 this.titleList=res.data.category.list;
                 getCategorySubData(this.titleList[0].maitKey).then(res=>{
-                           console.log(res);
                         this.titleContent=res.data.list;
                          });        
             });
